@@ -11,12 +11,17 @@ import { ClientesComponent } from './clientes/clientes.component';
 import { FormClienteComponent } from './clientes/form-cliente.component';
 import { HomeComponent } from './home/home.component';
 import { CategoriasComponent } from './categorias/categorias.component';
+import { FormCategoriaComponent } from './categorias/form-categoria.component';
 
 const routes:Routes=[
   { path:'', redirectTo:'/home', pathMatch:'full'},
   { path:'clientes', component:ClientesComponent },
   { path:'clientes/form', component:FormClienteComponent },
   { path:'clientes/form/:id', component:FormClienteComponent },
+
+  { path:'categorias', component:CategoriasComponent },
+  { path:'categorias/form', component:FormCategoriaComponent },
+  { path:'categorias/form/:id', component:FormCategoriaComponent },
 
 ]
 
@@ -27,6 +32,7 @@ const routes:Routes=[
     FormClienteComponent,
     HomeComponent,
     CategoriasComponent,
+    FormCategoriaComponent
   ],
   imports: [
     BrowserModule,
